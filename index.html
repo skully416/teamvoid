@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Void</title>
+  <meta name="description" content="Roblox Arsenal's #1 Clan">
+  <meta property="og:title" content="Team Void">
+  <meta property="og:description" content="Roblox Arsenal's #1 Clan"">
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1067826231682273392/1117572708553728090/void_4x.png">
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1067826231682273392/1117572708553728090/void_4x.png">
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .a {
+      text-decoration: underline;
+    }
+    
+    header {
+      background: url("https://media.discordapp.net/attachments/1067826231682273392/1117573781607682189/1A0OpwnHSG0_vpBZn7jkmzA.png?width=995&height=618") no-repeat center center;
+      background-size: cover;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 36px;
+      margin: 0;
+      color: #fff;
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .leaderboard {
+      text-align: left;
+    }
+
+    .leaderboard ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    .leaderboard li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .leaderboard li .rank {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .leaderboard li .player {
+      flex: 1;
+    }
+    
+    footer {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://media.discordapp.net/attachments/1067826231682273392/1117572708553728090/void_4x.png?width=825&height=618" alt="Team Void Logo" class="logo">
+    <h1>Team Void - Arsenal Clan</h1>
+  </header>
+
+  <main>
+    <section id="leaderboard">
+      <h2>Top Ranked Players</h2>
+      <div class="leaderboard">
+        <ol>
+          <li>
+            <div class="rank">#1</div>
+            <div class="player">Labiggz</div>
+          </li>
+          <li>
+            <div class="rank">#2</div>
+            <div class="player">vcz</div>
+          </li>
+          <li>
+            <div class="rank">#3</div>
+            <div class="player">skully416</div>
+          </li>
+                    <li>
+            <div class="rank">#4</div>
+            <div class="player">HoodZie</div>
+          </li>
+                    <li>
+            <div class="rank">#5</div>
+            <div class="player">mrme</div>
+          </li>
+        </ol>
+      </div>
+    </section>
+        <section id="staff">
+      <h2>Staff Team</h2>
+      <ul id="staff-list">
+        <!-- Staff list will be dynamically generated -->
+      </ul>
+    </section>
+    <section id="elite-players">
+      <h2>Elite Players</h2>
+      <ul id="elite-player-list">
+        <!-- Elite player list will be dynamically generated -->
+      </ul>
+    </section>
+
+    <section id="reserved-players">
+      <h2>Reserved Players</h2>
+      <ul id="reserved-player-list">
+        <!-- Reserved player list will be dynamically generated -->
+      </ul>
+    </section>
+    <section id="players">
+      <h2>Players</h2>
+      <ul id="player-list">
+        <!-- Player list will be dynamically generated -->
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Website made by Skully416 | <a href="https://discord.gg/example">Join our Discord</a></p>
+  </footer>
+
+  <script>
+    // JavaScript code
+    // Dynamically generate the player and staff lists
+
+    // Sample players data
+    const players = ["arrochatgamer166", "DemonicAimer", "divinematrix", "Dranfey", "ghosty", "hb", "juno", "Kylian", "L3m0n_h3ad", "NDT | Сктамяойжнетг", "NightmareGaming", "o7DIE", "OverConfident", "percmarket", "Razor.", "enjoyer",  "6ty", "a guy", "Ammaar", "andrew!", "Bocchi", "br33zyfn", "Brunoxete", "cave", "chaetour", "don baris", "dr6co", "dx9omar", "Err43", "fries", "gen", "LatinasOrAsians", "lolyono", "Mahad", "noghint", "Nova", "OKR", "orange", "Rayy", "Redluvsyou", "Renon", "Ryuk", "selflife34", "Shamz", "superboy", "vivi", "Yakito.✞"]; // Replace with your actual player names
+    const playerList = document.getElementById("player-list");
+    players.forEach(player => {
+      const listItem = document.createElement("li");
+      listItem.textContent = player;
+      playerList.appendChild(listItem);
+    });
+
+    // Sample staff members data
+    const staffMembers = ["Y0KP0", "Rexplayz", "gensai", "mug", "Fade"]; // Replace with your actual staff names
+    const staffList = document.getElementById("staff-list");
+    staffMembers.forEach(staff => {
+      const listItem = document.createElement("li");
+      listItem.textContent = staff;
+      staffList.appendChild(listItem);
+    });
+
+    // Sample elite players data
+    const elitePlayers = ["skully416", "vcz", "mug", "mrme", "Mod", "Labiggz", "HoodZie", "caden", "ayoob", "Z_", "yoink", "Totless", "Phegious", "how", "LY", "Entity", "AbstractDark"]; // Replace with your actual elite player names
+    const elitePlayerList = document.getElementById("elite-player-list");
+    elitePlayers.forEach(player => {
+      const listItem = document.createElement("li");
+      listItem.textContent = player;
+      elitePlayerList.appendChild(listItem);
+    });
+
+    // Sample reserved players data
+    const reservedPlayers = ["! -A", "Leetowners", "velkenm", "ProudLightning", "george", ""]; // Replace with your actual reserved player names
+    const reservedPlayerList = document.getElementById("reserved-player-list");
+    reservedPlayers.forEach(player => {
+      const listItem = document.createElement("li");
+      listItem.textContent = player;
+      reservedPlayerList.appendChild(listItem);
+    });
+  </script>
+  <footer>
+    <p>Website made by skully416 | <a class="a" href="https://discord.gg/NMuyVyKSzr">Join our Discord</a></p>
+  </footer>
+</body>
+</html>
